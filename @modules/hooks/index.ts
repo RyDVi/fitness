@@ -11,3 +11,5 @@ export * from "./value";
 export * from "./timeout";
 export * from "./methods";
 export * from "./localStorage";
+export * from "./query";
+export * from "./page";
