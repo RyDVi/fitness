@@ -1,0 +1,14 @@
+{
+    "name": "@modules/google",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.ts",
+    "author": "RyDVi (Ryabchunov Dmitry)",
+    "license": "ISC",
+    "dependencies": {
+      "react": "^18.2.0",
+      "@modules/axios-request": "*",
+      "@react-oauth/google@latest": "^0.11.1"
+    }
+  }
+  

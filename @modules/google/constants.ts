@@ -1,0 +1,1 @@
+export const GOOGLE_CONTEXT_KEY = 'google';

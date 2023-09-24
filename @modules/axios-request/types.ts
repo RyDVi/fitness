@@ -1,7 +1,6 @@
 import { AxiosResponse } from "axios";
-import { ValidationErrors } from "@modules/api";
 
-export type RequestType<D = any, R = any, E = ValidationErrors<D>> = {
+export type RequestType<D = any, R = any, E = any> = {
   data: D;
   setData: (data: D) => void;
   error?: E | null;

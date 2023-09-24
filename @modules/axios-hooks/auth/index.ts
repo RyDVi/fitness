@@ -13,7 +13,7 @@ import {
   NewPasswordData,
 } from "@modules/api";
 
-import { useAxiosRequest } from "../axios";
+import { useAxiosRequest } from "@modules/axios-request";
 
 export function useLogin() {
   const {
@@ -26,6 +26,7 @@ export function useLogin() {
     {
       initial: auth.initialLoginData(),
       config: auth.login,
+      key: 'fitness_server',
     }
   );
   return { loginData, errorOflogin, login, setLoginData, loading };
@@ -46,6 +47,7 @@ export function useSignup() {
   >({
     initial: auth.initialSignupData(),
     config: auth.signup,
+    key: 'fitness_server',
   });
   return {
     isLoadingSignup,
@@ -68,6 +70,7 @@ export function useSignupAccept() {
   } = useAxiosRequest<AcceptData, AuthData, ValidationErrors<AcceptData>>({
     initial: auth.initialSignupAcceptData(),
     config: auth.signupAccept,
+    key: 'fitness_server',
   });
   return {
     signupAcceptData,
@@ -94,6 +97,7 @@ export function useSendEmailForRestore() {
   >({
     initial: auth.initialRestoreDataForSendEmail(),
     config: auth.sendEmailForRestore,
+    key: 'fitness_server',
   });
   return {
     isLoadingRestoreEmail,
@@ -117,6 +121,7 @@ export function useSetNewPassword() {
     {
       initial: auth.initialNewPasswordData(),
       config: auth.setNewPassword,
+      key: 'fitness_server',
     }
   );
   return {
@@ -138,6 +143,7 @@ export function useStaffLogin() {
   } = useAxiosRequest<LoginData, StaffAuthData, ValidationErrors<LoginData>>({
     initial: auth.initialLoginData(),
     config: authStaff.login,
+    key: 'fitness_server',
   });
   return { loginData, errorOflogin, login, setLoginData };
 }
@@ -150,6 +156,7 @@ export function useStaffLogout() {
   >({
     initial: auth.initialLoginData(),
     config: authStaff.logout,
+    key: 'fitness_server',
   });
   return { logout };
 }

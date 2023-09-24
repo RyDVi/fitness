@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "workspaces":["@modules/api", "@modules/axios-hooks", "@modules/hooks", "@modules/theme", "@modules/utils", "src"],
+  "workspaces":["@modules/api", "@modules/axios-hooks", "@modules/hooks", "@modules/theme", "@modules/utils", "@modules/google", "@modules/axios-request", "src"],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

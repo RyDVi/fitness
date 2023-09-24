@@ -1,0 +1,12 @@
+{
+    "name": "@modules/axios-request",
+    "description": "",
+    "authors": "RyDVi (Ryabchunov Dmitry)",
+    "version": "0.0.1",
+    "main": "index.ts",
+    "dependencies": {
+      "axios": "^1.2.1",
+      "react": "^18.2.0"
+    }
+  }
+  

@@ -1,5 +1,4 @@
 import axios, { AxiosError, AxiosRequestConfig, AxiosInstance } from "axios";
-import { getCookie } from "cookies-next";
 import { RequestError } from "./types";
 
 export function createRequestError(error: any): RequestError {
@@ -37,8 +36,7 @@ export const setAuthHeader = (
   accessToken: string
 ) => (axiosInstance.defaults.headers["Authorization"] = `Token ${accessToken}`);
 
-export const getCsrfConfig = (baseURL: string): AxiosRequestConfig => {
-  const accessToken = getCookie("access_token");
+export const getCsrfConfig = (baseURL: string, accessToken?: string): AxiosRequestConfig => {
   return {
     baseURL,
     headers: {
