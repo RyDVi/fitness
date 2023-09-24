@@ -1,0 +1,8 @@
+{
+  "name": "@modules/utils",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.ts",
+  "author": "RyDVi (Ryabchunov Dmitry)",
+  "license": "ISC"
+}

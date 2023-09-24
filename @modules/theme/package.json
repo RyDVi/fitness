@@ -1,0 +1,13 @@
+{
+  "name": "@modules/theme",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.ts",
+  "author": "RyDVi (Ryabchunov Dmitry)",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "@mui/material": "^5.14.10",
+    "@modules/hooks": "*"
+  }
+}

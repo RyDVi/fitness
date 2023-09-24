@@ -1,0 +1,10 @@
+{
+  "name": "@modules/api",
+  "description": "",
+  "authors": "RyDVi (Ryabchunov Dmitry)",
+  "version": "0.0.1",
+  "main": "index.ts",
+  "dependencies": {
+    "react":"^18.2.0"
+  }
+}
